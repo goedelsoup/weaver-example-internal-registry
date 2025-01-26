@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/weaver
         with:
-          args: 'registry check'
+          subcommand: check
