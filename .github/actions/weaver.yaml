@@ -1,0 +1,16 @@
+# weaver.yaml
+#
+# This wraps the Weaver image to run the Weaver CLI via actions
+#
+name: 'Weaver'
+description: 'Run the Weaver CLI'
+inputs:
+  args:
+    description: 'Arguments to pass to the Weaver CLI'
+    required: false
+    default: 'registry check'
+runs:
+  using: 'docker'
+  image: 'docker://otel/weaver:v0.12.0'
+  args:
+  - ${{ inputs.args }}
