@@ -12,5 +12,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://otel/weaver:v0.12.0'
-  args:
-  - ${{ inputs.args }}
+  args: ${{ inputs.args }}
