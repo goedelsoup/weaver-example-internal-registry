@@ -1,0 +1,17 @@
+---
+groups:
+  - id: registry.acme
+    prefix: acme
+    type: attribute_group
+    display_name: Acme Registry
+    brief: >
+      The Acme Registry is a collection of attributes that are specific to the Acme Corporation.
+    attributes:
+      - id: region
+        type: string
+        brief: >
+          The region in which the entity is located.
+      - id: division
+        type: string
+        brief: >
+          The division within the company that the entity belongs to.
